@@ -1,0 +1,49 @@
+/* ALLPA SERVICIOS GEOLOGICOS
+--------------------------------*/
+.allpa{
+    padding:60px 0 30px 0;
+    .allpa_img{
+        overflow:hidden;
+        img{
+            margin-left:50px;
+            max-width:100%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .allpa{
+        .allpa_img{
+            height:auto;
+            img{
+                margin-left:0;
+                padding-bottom:30px;
+            }
+        }
+    }
+}
+
+.allpa{
+    .allpa_content{
+        h2{
+            color:$secundario;
+            font-weight: 700;
+            font-size: 36px;
+            font-family: "Raleway", sans-serif;
+            margin-bottom:40px;
+        }
+        i{
+            font-size: 20px;
+            padding-right: 4px;
+            color: $secundario;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            li{
+                padding-bottom: 35px;
+                font-size:17px;
+            }
+        }
+    }
+}

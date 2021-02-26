@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer{
+    background: #f2f5f8;
+    padding: 0 0 30px 0;
+    font-size: 17px;
+    text-align: center;
+    .footer_copyright{
+        padding-top: 30px;
+        margin-bottom:15px;
+    }
+}
+
+.footer_social-links{
+    a{
+        color: #555;
+        padding: 4px 12px;
+        display: inline-block;
+        line-height: 1px;
+        font-size:23px;
+        :hover{
+            color:$tercero;
+        }
+        :first-child{
+            border-left: 0;
+        }
+    }
+}

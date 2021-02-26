@@ -1,0 +1,31 @@
+/*boton para subir*/
+.boton-subir{
+    position: fixed;
+    display: none;
+    background:$secundario;
+    color:$primario;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+}
+
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 15px;
+    }
+}
+
+.boton-subir{
+    :focus{
+        background:$secundario;
+        color:$primario;
+        outline:none;
+    }
+    &:hover{
+        background:$tercero;
+        color:$primario;
+    }
+}
