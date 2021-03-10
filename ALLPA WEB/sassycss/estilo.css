@@ -165,7 +165,7 @@ h1 h2 h3 h4 h5 h6 {
 }
 
 /*==========  NAV MENU ========== */
-navegacion_menu-active
+/*========== nav menu ========== */
 .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
@@ -424,7 +424,7 @@ section {
   width: 50px;
   height: 3px;
   background: #019448;
-  bottom:0;
+  bottom: 0;
   left: 0;
 }
 
@@ -482,57 +482,10 @@ section {
   font-size: 17px;
 }
 
-/*  nosotros
---------------------------------*/
-.nosotros {
-  background: #fff;
-  padding: 30px 0 0 0;
-}
-
-.nosotros .nosotros_member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.nosotros .nosotros_member .nosotros_pic {
-  overflow: hidden;
-  text-align: center;
-}
-
-.nosotros .nosotros_member .nosotros_pic img {
-  max-width: 100%;
-}
-
-.nosotros .nosotros_details {
-  background: #019448;
-  color: #fff;
-  padding: 15px;
-  border-radius: 0 0 3px 3px;
-}
-
-.nosotros h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
-
-.nosotros span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-.nosotros .nosotros_social {
-  margin-top: 5px;
-}
-
-.nosotros .nosotros_social a {
-  color: #fff;
-}
-
-.nosotros .nosotros_social i {
-  font-size: 16px;
-  margin: 0 2px;
+@media (max-width: 767px) {
+  .allpa_imagen {
+    display: none;
+  }
 }
 
 /* servicios 
@@ -562,7 +515,7 @@ section {
 }
 
 .servicios .servicios_box h4 {
-  margin-left: 100px;
+  text-align: center;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
@@ -578,16 +531,18 @@ section {
 
 .servicios .servicios_box p {
   font-size: 16px;
-  margin-left: 100px;
+  margin-left: 0px;
   margin-bottom: 0;
   line-height: 20px;
+  text-align: center;
 }
 
 .servicios .servicios_box img {
-  position: relative;
-  width: 400px;
-  height: 400px;
+  display: block;
+  width: 200px;
+  height: 200px;
   padding: 30px;
+  margin: auto;
 }
 
 .servicios .servicios_box .servicios_vermas {
@@ -729,73 +684,12 @@ section {
   }
 }
 
-.contacto .php-email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contacto .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contacto .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contacto .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contacto .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contacto .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contacto .php-email-form input, #contacto .php-email-form textarea {
-  padding: 10px 14px;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-size: 15px;
-}
-
-.contacto .php-email-form input::focus, #contacto .php-email-form textarea::focus {
-  background-color: #019448;
-}
-
 .contacto .php-email-form button[type="submit"] {
   background: #019448;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
+  margin-top: 20px;
   color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -804,28 +698,6 @@ section {
 
 .contacto .php-email-form button[type="submit"]:hover {
   background: #f49c11;
-}
-
-@-webkit-keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------
@@ -892,6 +764,8 @@ pageservicio
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 23px;
+  color: #019448;
+  font-weight: 700;
 }
 
 .pageservicio_texto p {
@@ -899,4 +773,46 @@ pageservicio
   margin: 10px;
   font-size: 18px;
 }
+
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+#intro {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: url("../img/slider1.jpg") no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+
+#intro #intro-carousel {
+  z-index: 8;
+}
+
+#intro #intro-carousel:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+
+#intro .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
 /*# sourceMappingURL=estilo.css.map */
+
+.carousel-inner{
+  margin:15px;
+}

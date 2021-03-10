@@ -1,5 +1,4 @@
 /*==========  NAV MENU ========== */
-navegacion_menu-active
 /*========== nav menu ========== */
 
 .nav-menu, .nav-menu * {
@@ -81,7 +80,7 @@ navegacion_menu-active
 }
 
 .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #f49c11;
+  color:$tercero;
 }
 
 .nav-menu > li {
@@ -109,7 +108,7 @@ navegacion_menu-active
 }
 
 .nav-menu ul li:hover > a {
-  color:#f49c11;
+  color:$tercero;
 }
 
 .nav-menu ul ul {
@@ -196,11 +195,11 @@ navegacion_menu-active
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #019448;
+  color: $secundario;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #019448;
+  color: $secundario;
 }
 
 #mobile-body-overly {
